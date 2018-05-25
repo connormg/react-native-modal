@@ -465,6 +465,7 @@ export class ReactNativeModal extends Component {
           <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : null}
             pointerEvents="box-none"
+            keyboardShouldPersistTaps
             style={computedStyle.concat([{ margin: 0 }])}
           >
             {containerView}
